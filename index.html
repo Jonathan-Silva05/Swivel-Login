@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Swivel Login</title>
+</head>
+<body>
+  <div class="contentBody">
+    <header>
+      <button>
+        <img src="avatar.png" draggable="false">
+        Entrar
+      </button>
+    </header>
+
+ <!-- ================== CONTEÚDO ================== -->
+
+ <!-- ================ FIM CONTEÚDO ================ -->
+  </div>
+
+ <!-- ================= ÁREA FORMS ================= -->
+  <div class="contentLogin">
+    <div class="alignPage">
+      <div class="closeBtn">
+        <button> X </button>
+      </div>
+
+      <div class="page">
+        <div class="pageLogin">
+          <h1> Login </h1>
+          <img src="avatar.png" alt="Avatar" draggable="false">
+
+          <form action="" class="form_inline">
+            <label> Nome do usuário: </label>
+            <input type="text" name="NomeLogin" placeholder="Insira nome de usuário">
+
+            <label> Senha: </label>
+            <div class="pass">
+              <input type="password" id="senhaLogin"  name="SenhaLogin" placeholder="Digite a senha">
+              <i class="fa fa-eye fa-lg viewPass" onclick="viewPass(event, 'senhaLogin')"> </i>
+            </div>
+
+            <button class="color_1"> Conecte-se </button>
+          </form>
+
+          <div class="col_btns_2">
+            <a href=""> Esqueceu a senha? </a>
+            <p> Não possui conta? <button class="btnVira"> Faça seu Cadastro </button> </p>
+          </div>
+        </div>
+
+        <div class="pageCadastrar">
+          <h1> Cadastro </h1>
+          <h4> Por favor, preencha este formulário para criar uma conta. </h4>
+
+          <form action="" class="form_inline">
+            <label> Nome do usuário: </label>
+            <input type="text" name="nomeUsuario" placeholder="Insira nome de usuário">
+
+            <label> Email: </label>
+            <input type="email" name="emailUsuario" placeholder="Digite o e-mail">
+
+            <label> Senha: </label>
+            <div class="pass">
+              <input type="password" id="senhaUsuario"  name="SenhaUsuario" placeholder="Digite a senha">
+              <i class="fa fa-eye fa-lg viewPass" onclick="viewPass(event, 'senhaUsuario')"> </i>
+            </div>
+
+            <label> Repita a senha: </label>
+            <div class="pass">
+              <input type="password" id="senhaUsuario2"  name="SenhaUsuario2" placeholder="Repita a senha">
+              <i class="fa fa-eye fa-lg viewPass" onclick="viewPass(event, 'senhaUsuario2')"> </i>
+            </div>
+
+            <div class="col_btns_1">
+              <button class="color_2"> Cancelar </button>
+              <button class="color_1"> Cadastre-se </button>
+            </div>
+          </form>
+
+          <div class="col_btns_2">
+            <p> Já possui conta? <button class="btnVira"> Faça o Login </button> </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ <!-- =============== FIM ÁREA FORMS =============== -->
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
